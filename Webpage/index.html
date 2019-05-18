@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>GPS Live Data Login</title>
+	<link rel='stylesheet' href='http://codepen.io/assets/libs/fullpage/jquery-ui.css'>
+    <link rel="stylesheet" href="css/style.css" media="screen" type="text/css" />
+	<body style="background: url('cool4.png')">
+</head>
+
+<body>
+	<div class="login-card">
+		<h1>Welcome!</h1>
+		<h1>Login  Here</h1><br>
+		<form name="logincreate">
+			<input type="text" name="user" placeholder="Username">
+			<input type="password" name="pass" placeholder="Password">
+			<input type="submit" name="login" onclick= "check(this.form)" class="login login-submit" value="Login">
+		</form>
+		<script>
+		function check(form)
+		{
+		if(form.user.value == "kvsrakesh" && form.pass.value == "sachin10")
+			{
+			window.open('m.html')
+			self.close()
+			}
+		else
+			{
+			alert("Error in Password or Username!!")
+			}
+		}
+		</script>
+		<div class="login-help">
+			<a href="#">Register</a>•<a href="#">Forgot Password</a>
+		</div>
+	</div>
+
+</body>
+
+</html>
